@@ -115,6 +115,23 @@
       object-fit: contain;
       display: block;
     }
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      padding: 9px 20px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--negro);
+      background: var(--oro);
+      white-space: nowrap;
+      transition: background 0.25s, transform 0.2s;
+      flex-shrink: 0;
+    }
+    .nav-cta:hover { background: var(--oro-claro); transform: translateY(-1px); }
     /* ── ALERTA URGENCIA ── */
     .alerta-top {
       background: var(--rojo);
@@ -1541,6 +1558,7 @@
     /* ── TABLET PEQUEÑA / MÓVIL GRANDE: 768px ── */
     @media (max-width: 768px) {
       .nav { padding: 0 20px; height: 60px; }
+      .nav-cta { font-size: 0.58rem; padding: 8px 14px; letter-spacing: 0.1em; }
       .nav-logo img { height: 30px; }
       .alerta-top { font-size: 0.78rem; padding: 10px 16px; margin-top: 60px; }
       .hero { padding: 40px 20px 52px; gap: 32px; }
@@ -1581,6 +1599,7 @@
     /* ── MÓVIL: 480px ── */
     @media (max-width: 480px) {
       .nav { height: 56px; }
+      .nav-cta { display: none; }
       .alerta-top { font-size: 0.73rem; padding: 9px 12px; margin-top: 56px; line-height: 1.5; }
       /* deadline-bar compacta en móvil */
       .deadline-bar { padding: 8px 14px; gap: 8px; }
@@ -1678,6 +1697,10 @@
     <a href="#" class="nav-logo">
       <img src="assets/logo1.png" alt="Castrillón Soluciones Laborales" width="162" height="44">
     </a>
+    <a href="https://wa.me/573181119399?text=Hola%2C%20quiero%20una%20consulta%20gratis%20sobre%20el%20Reglamento%20Interno%20de%20Trabajo"
+       class="nav-cta" target="_blank" rel="noopener noreferrer">
+      CONTÁCTANOS · CONSULTA GRATIS
+    </a>
   </nav>
 
   <!-- ALERTA URGENCIA -->
@@ -1712,7 +1735,7 @@
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
             <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.126 1.534 5.864L.057 23.571a.75.75 0 00.916.916l5.765-1.496A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.726 9.726 0 01-4.962-1.358l-.356-.212-3.685.957.98-3.584-.232-.368A9.75 9.75 0 0112 2.25c5.385 0 9.75 4.365 9.75 9.75S17.385 21.75 12 21.75z"/>
           </svg>
-          HABLA CON UN ESPECIALISTA
+          HABLA CON UN ESPECIALISTA · CONSULTA GRATIS
         </a>
       </div>
     </div>
